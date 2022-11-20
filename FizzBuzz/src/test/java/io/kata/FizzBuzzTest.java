@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FizzBuzzTest {
 
     @Test
-    void fail() {
-        assertTrue(true);
+    void givenNumeral1ShouldJustConvertToString() {
+        assertEquals(1, new FizzBuzz().convert(1));
     }
 }
