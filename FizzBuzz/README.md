@@ -26,15 +26,17 @@ FizzBuzz
 ```
 
 ## Attempt
-In iterative Cycles via `Green > Red > Refactor` steps
+In iterative Cycles of `Red > Green > Refactor` steps
+Or also can be interpreted as `Red > Green` cycles with `Refactor` steps in between... while keeping `Green`
 ### Iteration Cycles
-#### **cycle 1**
-  - Green:
+#### **cycle 0**
+- Green:
     - Initially there is nothing, no test, no class
     - System works/compile so can be considered Green
-  - Red:
+#### **cycle 1**
+- Red:
     - Make system state Red. White one failing test
-    - Pick the minimal simplest unit of functionality
+    - Pick the minimal and simplest unit of functionality
     - Implement the simplest failure (compilation failure is still a failure!)
       - Start with the Test Class, and reference the Target Class which doesn't exist yet
       - So the test will fail to compile because of the referenced non-existing Target Class
@@ -42,9 +44,9 @@ In iterative Cycles via `Green > Red > Refactor` steps
     - Is it failing for the right reason?
       - No: a compilation error is a failure but not a valid reason
     - Write just enough production code to make the test compile
-      - It could be just rising an exception, so still failing
+      - It could be just rising an exception, so still failing, but now it compiles
   - Green:
-    - Write the simplest code to make test pass
+    - Write the simplest code to make the test pass
     - Apply TDD principles:
       - `You are not allowed to write any production code unless it is for making a failing unit test pass`
       - `Faking it`
@@ -55,6 +57,6 @@ In iterative Cycles via `Green > Red > Refactor` steps
       - `fake it until you make it`
     - By concentrating on the simplest solution possible an elegant solution will _**emerge**_ as you add tests
   - Refactor:
-    - only if the there is duplications
-    - if done then keep it Green
+    - only if the there is duplications your have seen 3 times
+    - if any refactor is done then make sure to keep state Green
 #### **cycle 2**:
