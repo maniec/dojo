@@ -12,8 +12,8 @@ Novice, Beginners, Competent, Expert
 
 ## The 3 laws of TDD - Rule of 3
 [Robert C. Martin (uncle Bob)](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
-2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
 ## References
