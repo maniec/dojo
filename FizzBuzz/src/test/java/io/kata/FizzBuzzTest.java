@@ -8,6 +8,7 @@ class FizzBuzzTest {
 
     @Test
     void givenNumeral1ShouldJustConvertToString() {
-        assertEquals(1, new FizzBuzz().convert(1));
+        // pick the simplest and minimal functionality
+        assertEquals("1", new FizzBuzz().convert(1));
     }
 }
