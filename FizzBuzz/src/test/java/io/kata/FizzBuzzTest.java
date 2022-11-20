@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// main reference: https://www.codurance.com/katalyst/fizzbuzz#Frequently-Asked-Questions
 class FizzBuzzTest {
 
     @Test
